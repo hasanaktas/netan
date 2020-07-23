@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "contact": "Iletisim"
+  },
+  "home": {},
+  "intro": {
+    "welcome": "Selam, {{username}}!",
+    "text": "Turkce Aciklama Text ",
+    "description": "Turkce Intro Aciklama"
+  },
+  "dashboard": {
+    "description": "Turkce Dashboard Aciklama"
+  }
+}
