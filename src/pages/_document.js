@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name='theme-color' content={theme.palette.primary.main} />
           <link
-            href='https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap'
             rel='stylesheet'
           />
         </Head>

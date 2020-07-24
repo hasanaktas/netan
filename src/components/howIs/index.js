@@ -6,7 +6,7 @@ import {
   makeStyles,
   Box,
 } from '@material-ui/core'
-import { GroupWork, WbSunny,Train } from '@material-ui/icons'
+import { GroupWork, WbSunny, Train } from '@material-ui/icons'
 
 const options = [
   {
@@ -53,13 +53,18 @@ const HowIs = () => {
       <Container maxWidth='md'>
         <Grid container spacing={4}>
           <Grid item xs={12}>
-            <Typography style={{marginBottom:'20px'}} align='center' variant='h3' className={classes.text}>
-            NETAN NDT Tahribatsız Muayene 
+            <Typography
+              style={{ marginBottom: '20px' }}
+              align='center'
+              variant='h3'
+              className={classes.text}
+            >
+              NETAN NDT Tahribatsız Muayene
             </Typography>
             <Typography align='center' className={classes.text}>
-            Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri,
-             otomotiv, enerji, demir çelik ve döküm endüstrisi gibi sektörlere; ürün, 
-             sistem ve çözüm hizmetleri sunmaktadır
+              Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji
+              Sistemleri, otomotiv, enerji, demir çelik ve döküm endüstrisi gibi
+              sektörlere; ürün, sistem ve çözüm hizmetleri sunmaktadır
             </Typography>
           </Grid>
           {options.map((item, index) => {
@@ -70,7 +75,7 @@ const HowIs = () => {
                 </Box>
 
                 <Typography
-                style={{marginBottom:'20px'}}
+                  style={{ marginBottom: '20px' }}
                   align='center'
                   variant='h5'
                   width='100%'
@@ -78,7 +83,11 @@ const HowIs = () => {
                 >
                   {item.title}
                 </Typography>
-                <Typography width='100%'  className={classes.text}>
+                <Typography
+                  width='100%'
+                  align='center'
+                  className={classes.text}
+                >
                   {item.info}
                 </Typography>
               </Grid>

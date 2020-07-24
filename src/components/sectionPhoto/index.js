@@ -13,12 +13,13 @@ import {
   Grade,
   IndeterminateCheckBoxSharp,
 } from '@material-ui/icons'
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
 
 const options = [
   {
     icon: Category,
-    title: 'Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri',
+    title:
+      'Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri',
   },
   {
     icon: Category,
@@ -56,8 +57,10 @@ const useStyles = makeStyles((theme) => ({
   },
 
   iphone: {
-    height: 500,
+    objectFit: 'cover',
+    height: 'auto',
     width: '100%',
+    borderRadius: 10,
   },
 }))
 
@@ -68,9 +71,7 @@ const SectionPhoto = () => {
       <Container maxWidth='md'>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <Typography variant='h3'>
-            NETAN - Tahribatsız Muayene
-            </Typography>
+            <Typography variant='h3'>NETAN - Tahribatsız Muayene</Typography>
             {options.map((item, index) => {
               return (
                 <Box
@@ -87,8 +88,12 @@ const SectionPhoto = () => {
                 </Box>
               )
             })}
-            <Button variant="outlined" color="primary" style={{marginTop:'20px'}}>
-                Detaylar için Tıklayınız
+            <Button
+              variant='outlined'
+              color='primary'
+              style={{ marginTop: '20px' }}
+            >
+              Detaylar için Tıklayınız
             </Button>
           </Grid>
           <Grid item xs={12} md={6}>
