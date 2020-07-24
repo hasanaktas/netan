@@ -5,7 +5,6 @@ import {
   Typography,
   IconButton,
   Box,
-  Container,
 } from '@material-ui/core'
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
@@ -44,11 +43,14 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: '100%',
     height: 'auto',
+    minHeight: 400,
+    objectFit: 'cover',
     display: 'block',
   },
   imgOverlay: {
     position: 'absolute',
     left: 0,
+    padding: theme.spacing(10),
     backgroundColor: 'rgba(0,0,0,0.5)',
     right: 0,
     top: 0,
@@ -57,12 +59,12 @@ const useStyles = makeStyles((theme) => ({
     height: ' 100%',
     width: '100%',
     zIndex: 100,
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   titleContainer: {
     height: '100%',
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
   },
   text: {
     color: '#fff',
@@ -125,16 +127,12 @@ const SectionSlider = () => {
               <img className={classes.img} src={item.image} alt={item.title} />
             ) : null}
             <Box className={classes.imgOverlay}>
-              <Container maxWidth='md'>
-                <Box className={classes.titleContainer}>
-                  <Typography variant='h3' className={classes.text}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant='h5' className={classes.text}>
-                    {item.subTitle}
-                  </Typography>
-                </Box>
-              </Container>
+              <Typography variant='h3' className={classes.text}>
+                {item.title}
+              </Typography>
+              <Typography variant='h5' className={classes.text}>
+                {item.subTitle}
+              </Typography>
             </Box>
           </Paper>
         ))}
