@@ -7,31 +7,33 @@ import {
   makeStyles,
 } from '@material-ui/core'
 import {
-  AccessAlarm,
-  ThreeDRotation,
+  Category,
+  Check,
+  People,
+  Grade,
   IndeterminateCheckBoxSharp,
 } from '@material-ui/icons'
 import Button from '@material-ui/core/Button';
 
 const options = [
   {
-    icon: AccessAlarm,
+    icon: Category,
     title: 'Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri',
   },
   {
-    icon: AccessAlarm,
+    icon: Category,
     title: 'Otomotiv, enerji, demir çelik ve döküm endüstrisi',
   },
   {
-    icon: AccessAlarm,
+    icon: Grade,
     title: 'İhtiyacınız olan ürünleri kiralama imkanı',
   },
   {
-    icon: AccessAlarm,
+    icon: People,
     title: 'Öncü firmalarla işbirliği',
   },
   {
-    icon: AccessAlarm,
+    icon: Check,
     title: 'Müşteri Odaklı Yaklaşım',
   },
 ]
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 
   iphone: {
     height: 500,
-    width: 'auto',
+    width: '100%',
   },
 }))
 
@@ -65,7 +67,7 @@ const SectionPhoto = () => {
     <Paper square className={classes.paper}>
       <Container maxWidth='md'>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={6}>
             <Typography variant='h3'>
             NETAN - Tahribatsız Muayene
             </Typography>
@@ -89,7 +91,7 @@ const SectionPhoto = () => {
                 Detaylar için Tıklayınız
             </Button>
           </Grid>
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={6}>
             <Box width='100%' display='flex' justifyContent='center'>
               <img src='/assets/images/iphone.png' className={classes.iphone} />
             </Box>

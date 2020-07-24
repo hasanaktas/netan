@@ -6,24 +6,24 @@ import {
   makeStyles,
   Box,
 } from '@material-ui/core'
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons'
+import { GroupWork, WbSunny,Train } from '@material-ui/icons'
 
 const options = [
   {
-    icon: AccessAlarm,
-    title: 'Daha İyi Bir Hizmet',
+    icon: GroupWork,
+    title: 'NDT',
     info:
       'Tecrübesi ve her gün yenilenen teknolojisiyle beraber kendini sürekli geliştiren firmamız sizlere kaliteli hizmet ayrıcalığını, en iyi teknolojiyi ve daha birçok günümüz teknolojisine paralel hizmetleri ile sunar.',
   },
   {
-    icon: ThreeDRotation,
-    title: 'Öncü Firmalarla İşbirliği',
+    icon: WbSunny,
+    title: 'Enerji',
     info:
       'Sektörünün dünyada öncü firmalarını Türkiye’de ve Asya Ülkeleri’nde başarılı bir şekilde temsil ederek standartlara uygun cihaz, donanım ve mühendislik çözümlerini müşteri odaklı sunmaktadır.',
   },
   {
-    icon: AccessAlarm,
-    title: 'Kiralama Hizmeti',
+    icon: Train,
+    title: 'Demiryolu',
     info:
       'Firmamız dünyanın önde gelen test ve analiz cihazlarını ihtiyaçlarınız doğrultusunda belirleyerek istenmesi durumunda kiralık olarak hizmetinize sunmaktadır. ',
   },
@@ -54,7 +54,7 @@ const HowIs = () => {
         <Grid container spacing={4}>
           <Grid item xs={12}>
             <Typography style={{marginBottom:'20px'}} align='center' variant='h3' className={classes.text}>
-            NETAN Tahribatsız Muayene 
+            NETAN NDT Tahribatsız Muayene 
             </Typography>
             <Typography align='center' className={classes.text}>
             Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri,
