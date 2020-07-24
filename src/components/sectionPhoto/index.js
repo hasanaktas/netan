@@ -11,27 +11,28 @@ import {
   ThreeDRotation,
   IndeterminateCheckBoxSharp,
 } from '@material-ui/icons'
+import Button from '@material-ui/core/Button';
 
 const options = [
   {
     icon: AccessAlarm,
-    title: 'First Option Lorem Ipsum',
+    title: 'Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri',
   },
   {
     icon: AccessAlarm,
-    title: 'Second Option Lorem Ipsum',
+    title: 'Otomotiv, enerji, demir çelik ve döküm endüstrisi',
   },
   {
     icon: AccessAlarm,
-    title: 'Third Option Lorem Ipsum',
+    title: 'İhtiyacınız olan ürünleri kiralama imkanı',
   },
   {
     icon: AccessAlarm,
-    title: 'Tertiary Option Lorem Ipsum',
+    title: 'Öncü firmalarla işbirliği',
   },
   {
     icon: AccessAlarm,
-    title: 'Five Option Lorem Ipsum',
+    title: 'Müşteri Odaklı Yaklaşım',
   },
 ]
 
@@ -47,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#e2e8f0',
     boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.16)',
     marginRight: theme.spacing(2),
   },
@@ -64,9 +65,9 @@ const SectionPhoto = () => {
     <Paper square className={classes.paper}>
       <Container maxWidth='md'>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={7}>
             <Typography variant='h3'>
-              How Connected With All Of Your Friends
+            NETAN - Tahribatsız Muayene
             </Typography>
             {options.map((item, index) => {
               return (
@@ -84,8 +85,11 @@ const SectionPhoto = () => {
                 </Box>
               )
             })}
+            <Button variant="outlined" color="primary" style={{marginTop:'20px'}}>
+                Detaylar için Tıklayınız
+            </Button>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5}>
             <Box width='100%' display='flex' justifyContent='center'>
               <img src='/assets/images/iphone.png' className={classes.iphone} />
             </Box>

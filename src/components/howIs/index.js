@@ -11,21 +11,21 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons'
 const options = [
   {
     icon: AccessAlarm,
-    title: 'First Option',
+    title: 'Daha İyi Bir Hizmet',
     info:
-      'Lorem ipsum dolar sit amet Lorem Lorem ipsum dolar sit amet Lorem  amet amet Lorem  amet Lorem',
+      'Tecrübesi ve her gün yenilenen teknolojisiyle beraber kendini sürekli geliştiren firmamız sizlere kaliteli hizmet ayrıcalığını, en iyi teknolojiyi ve daha birçok günümüz teknolojisine paralel hizmetleri ile sunar.',
   },
   {
     icon: ThreeDRotation,
-    title: 'Second Option',
+    title: 'Öncü Firmalarla İşbirliği',
     info:
-      'Lorem ipsum dolar sit amet Lorem Lorem ipsum dolar sit amet Lorem  amet amet Lorem  amet Lorem',
+      'Sektörünün dünyada öncü firmalarını Türkiye’de ve Asya Ülkeleri’nde başarılı bir şekilde temsil ederek standartlara uygun cihaz, donanım ve mühendislik çözümlerini müşteri odaklı sunmaktadır.',
   },
   {
     icon: AccessAlarm,
-    title: 'Third Option',
+    title: 'Kiralama Hizmeti',
     info:
-      'Lorem ipsum dolar sit amet Lorem Lorem ipsum dolar sit amet Lorem  amet amet Lorem  amet Lorem',
+      'Firmamız dünyanın önde gelen test ve analiz cihazlarını ihtiyaçlarınız doğrultusunda belirleyerek istenmesi durumunda kiralık olarak hizmetinize sunmaktadır. ',
   },
 ]
 
@@ -51,15 +51,15 @@ const HowIs = () => {
   return (
     <Paper square className={classes.paper}>
       <Container maxWidth='md'>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           <Grid item xs={12}>
-            <Typography align='center' variant='h3' className={classes.text}>
-              How sApp works?
+            <Typography style={{marginBottom:'20px'}} align='center' variant='h3' className={classes.text}>
+            NETAN Tahribatsız Muayene 
             </Typography>
             <Typography align='center' className={classes.text}>
-              Lorem ipsum dolar sit amet Lorem ipsum dolar sit amet Lorem ipsum
-              dolar sit amet Lorem ipsum dolar sit amet Lorem ipsum dolar sit
-              amet
+            Tahribatsız Muayene, Endüstriyel Güvenlik ve Tren Teknoloji Sistemleri,
+             otomotiv, enerji, demir çelik ve döküm endüstrisi gibi sektörlere; ürün, 
+             sistem ve çözüm hizmetleri sunmaktadır
             </Typography>
           </Grid>
           {options.map((item, index) => {
@@ -70,13 +70,15 @@ const HowIs = () => {
                 </Box>
 
                 <Typography
+                style={{marginBottom:'20px'}}
                   align='center'
                   variant='h5'
+                  width='100%'
                   className={classes.text}
                 >
                   {item.title}
                 </Typography>
-                <Typography align='center' className={classes.text}>
+                <Typography width='100%'  className={classes.text}>
                   {item.info}
                 </Typography>
               </Grid>
